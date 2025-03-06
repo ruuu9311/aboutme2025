@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>蔡鈞如簡介</title>
+	<style type="text/css">
+		* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
+		h1 {color:#4169e1; font-size:60px;}
+		h2 {color:#ffa07a; font-size:40px;}
+	</style>
+
+	<script>
+		function change1() {
+			document.getElementById("pic").src = "mountain.jpg";
+			document.getElementById("h1text").innerText = "靜宜資管";
+			document.getElementById("h2text").innerText = "資訊管理導論";
+		}
+		function change2() {
+			document.getElementById("pic").src = "cliff.jpg";
+			document.getElementById("h1text").innerText = "蔡鈞如";
+			document.getElementById("h2text").innerText = "Jun-Ru Tsai";
+		}
+	</script>
+	
+</head>
+<body>
+	<?php echo date("Y-m-d") ?>
+	<table width="70%">
+		<tr>
+			<td>
+				<img src="cliff.jpg" width="110%"
+				id="pic" onmouseover="change1()" onmouseout="change2()"></img>
+			</td>
+			<td>
+				<h1 id="h1text">蔡鈞如</h1>
+				<h2 id="h2text">Jun-Ru Tsai</h2>
+			</td>
+		</tr>
+	</table>
+	<table width="70%" border="1">
+		<tr>
+			<td>
+				School：<a href="https://www.pu.edu.tw/">https://www.pu.edu.tw/</a><br>
+				IG：<a href="https://www.instagram.com/junruuu_1106" target="_blank">https://www.instagram.com/junruuu_1106</a><br>
+				Tel：<a href="tel:0426328001">04-26328001</a><br>
+				E-Mail：<a href="mailto:ruuu9311@gmail.com">ruuu9311@gmail.com</a><br>
+			</td>
+			<td>
+				大象席地而坐電影配樂<br>
+				<audio controls>
+					<source src="elephant.mp3" type="audio/mP3">
+				</audio><br>
+			</td>
+			<td>
+				摳尼吉蛙<br>
+				<iframe src="https://www.youtube.com/embed/NeqGvQ_vomA" allowfullscreen></iframe>
+			</td>
+		</tr>
+	</table>
+	<table width="70%" border="1">
+		<tr>
+			<td>
+				笑話機器人<br>
+				<iframe width="500" height="300" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/1a915914-d1e1-4169-b66a-2ac5063741fe"></iframe>
+			</td>
+		</tr>
+	</table>
+	
+	</body>
+	</html>
